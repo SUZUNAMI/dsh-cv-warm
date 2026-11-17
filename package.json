@@ -1,0 +1,42 @@
+{
+  "name": "dsh-cv-warm",
+  "version": "0.1.0",
+  "description": "Skip offscreen transcript rendering (content-visibility) and pre-warm blocks near the viewport so scrolling stays smooth.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUZUNAMI/dsh-cv-warm.git"
+  },
+  "homepage": "https://github.com/SUZUNAMI/dsh-cv-warm#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "performance",
+    "rendering"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

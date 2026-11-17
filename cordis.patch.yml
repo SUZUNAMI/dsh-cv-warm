@@ -1,0 +1,4 @@
+# dsh bundle patch: insert the client-only content-visibility warm-up.
+- insert:
+    - id: dsh-cv-warm
+      name: 'dsh-cv-warm'
